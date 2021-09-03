@@ -1,2 +1,2 @@
 # Script-Utilities
-My linux utilities
+My linux utilities and scripts
