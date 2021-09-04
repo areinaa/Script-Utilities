@@ -1,3 +1,5 @@
+
+
 extractports(){
 
 if [ -z $1 ];then
