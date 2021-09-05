@@ -1,9 +1,9 @@
 #!/bin/bash
 
-extractports(){
 
 if [ -z $1 ];then
-echo "\n\tUsage: extractports [nmap_file] [OPTIONAL_export_file]"
+echo "\n\tUsage: ./extractports.sh [nmap_file] [OPTIONAL_export_file]"
+exit 1
 else
 
 ip="$(/usr/bin/cat $1 | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u)"
@@ -22,5 +22,3 @@ echo "\tIP_Address : $ip" >> $2
 echo "\tOpen_ports : $ports" >> $2
 
 fi
-
-}
