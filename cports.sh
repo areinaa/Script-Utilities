@@ -2,7 +2,7 @@
 
 
 if [ -z $1 ];then
-echo "\n\tUsage: ./extractports.sh [nmap_file] [OPTIONAL_export_file]"
+echo "\n\tUsage: ./cports.sh [nmap_file] [OPTIONAL_export_file]"
 exit 1
 else
 
