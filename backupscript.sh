@@ -11,7 +11,6 @@ then
 mkdir saves
 fi
 
-
 if [ "$1" = "AUTO1" ] && [ ! -z "$2" ]
 then
 	echo "Content:" >> list.txt
@@ -33,7 +32,6 @@ then
 
 	exit
 fi
-
 
 if [ "$1" = "AUTO2" ]
 then
@@ -185,7 +183,7 @@ else #NO COMPRESSION
 						rm $backupdir'_'$date'_'$hour
                         rm -r $backupdir'_'$date'_'$hour/*
 						cp -R $path/* $backupdir'_'$date'_'$hour
-						echo "$date, $hour: Copia de /$path sin comprimir. La anterior ha sido sustituida." >> log.txt
+						echo "$date, $hour: Copy of /$path is not compressed. The previous one has been substituted." >> log.txt
 
                 else
                         echo "Creating an additional backup..."
